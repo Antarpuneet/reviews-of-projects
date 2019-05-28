@@ -25,7 +25,7 @@ async def main(url):
             sep = ' '
             fin = sep.join(fins)    
     
-            with open('project name here', 'a') as the_file:
+            with open('project name here', 'a') as the_file:  #Type project name here
                 temp = fin[:1]
                 k = ord(temp)
                 if (k in range(97,123) or k in range(65,91) or k in range(48,58)):
@@ -39,7 +39,7 @@ async def main(url):
             
 urls=[]
 for i in range(0,301,25):
-    urls.append(f'https://sourceforge.net/projects/'project name here'/reviews/?offset={i}#reviews')
+    urls.append(f'https://sourceforge.net/projects/'project name here'/reviews/?offset={i}#reviews') #type project name here
     
          
 print(urls)
